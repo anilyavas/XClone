@@ -1,0 +1,38 @@
+export const DummyData = [
+  {
+    id: 1,
+    username: 'Jack Wilson',
+    profilename: 'jackwilson',
+    text: 'This is Jack Wilson joined in X.',
+    comments: 3,
+    retweets: 2,
+    likes: 32,
+  },
+  {
+    id: 2,
+    username: 'Harry Kane',
+    profilename: 'hurrykane',
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse velit odio, viverra in convallis placerat, tincidunt in lorem. Mauris laoreet urna ut varius egestas. Etiam non hendrerit sem. Proin vulputate risus elit, a iaculis tortor pellentesque et. Aenean sed erat dapibus, varius erat vitae, luctus mauris. Etiam eu nunc massa. Donec lobortis mauris sit amet enim auctor varius. Pellentesque semper mauris felis, quis mattis ex congue ac.',
+    comments: 3,
+    retweets: 2,
+    likes: 32,
+  },
+  {
+    id: 3,
+    username: 'Serena Williams',
+    profilename: 'serenawilliams',
+    text: 'Nam sit amet iaculis nulla. Vestibulum convallis neque non vulputate dictum. Praesent suscipit bibendum enim ac aliquam. Fusce lacinia est at ligula posuere volutpat. Quisque consequat odio vitae erat commodo, in pretium mauris faucibus. Aliquam rutrum eu nulla in commodo. Sed ut arcu sapien. Nunc ultricies odio eget vulputate malesuada. Nulla facilisi. Etiam rhoncus porta enim et facilisis. Praesent fringilla nisl eget pulvinar ornare. Sed velit justo, sollicitudin sit amet ante quis, posuere sollicitudin sem. Vestibulum ut nulla eu lorem pulvinar tempus. Fusce elementum dui sapien, ut suscipit dui ullamcorper a. Suspendisse in turpis varius, commodo sapien ac, congue lacus. Proin id pretium enim.',
+    comments: 3,
+    retweets: 2,
+    likes: 32,
+  },
+  {
+    id: 4,
+    username: 'Elon Musk',
+    profilename: 'elonmusk',
+    text: 'Sed nec nibh tempor, euismod nulla in, euismod massa. Proin venenatis purus ac massa lacinia, vel euismod ligula sollicitudin. Nulla ac libero sapien. Ut at sem sit amet sapien iaculis convallis quis non massa. Aliquam erat volutpat. Fusce tincidunt, nibh feugiat venenatis auctor, ante nibh cursus justo, nec finibus metus metus vitae tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nunc mauris, tempor eget mi sit amet, viverra facilisis sem. Ut efficitur, diam at gravida lacinia, dolor neque sodales mi, in laoreet mauris quam eget odio.',
+    comments: 3,
+    retweets: 2,
+    likes: 32,
+  },
+];

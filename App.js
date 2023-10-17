@@ -1,21 +1,22 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
-import TopBarMenu from './components/TopBarMenu';
-import Post from './components/Post';
+import MainScreen from './screens/MainScreen';
+import {createStackNavigator} from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+
+const Stack = createStackNavigator();
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <TopBarMenu />
-      <Post />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name={'MainScreen'}
+          component={MainScreen}
+          options={{headerShown: false}}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 };
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'black',
-  },
-});
 
 export default App;

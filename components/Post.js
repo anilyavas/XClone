@@ -7,11 +7,13 @@ import {
   faHeart,
   faRetweet,
 } from '@fortawesome/free-solid-svg-icons';
+import {DummyData} from '../data/DummyData';
 
-const Post = () => {
+const Post = (username, profilename, likes, comments, retweets) => {
   const [countComment, setCountComment] = useState(0);
   const [countRetweet, setCountRetweet] = useState(0);
   const [countLike, setCountLike] = useState(0);
+
   return (
     <View style={styles.postContainer}>
       <Image
@@ -20,8 +22,8 @@ const Post = () => {
       />
       <View>
         <View style={styles.profileContainer}>
-          <Text style={styles.userName}>UserName</Text>
-          <Text style={styles.linkofProfile}>@username</Text>
+          <Text style={styles.userName}>{DummyData.username}</Text>
+          <Text style={styles.linkofProfile}>@{DummyData.profilename}</Text>
           <Text
             style={{
               color: 'white',
@@ -33,7 +35,7 @@ const Post = () => {
           </Text>
           <Text style={styles.hours}>12h</Text>
         </View>
-        <Text style={styles.text}>This is a post</Text>
+        <Text style={styles.text}>{DummyData.text}</Text>
         <View style={styles.icons}>
           <Pressable
             onPress={() => {
@@ -41,7 +43,7 @@ const Post = () => {
             }}
             style={styles.button}>
             <FontAwesomeIcon icon={faComment} color="grey" />
-            <Text style={styles.number}>{countComment}</Text>
+            <Text style={styles.number}>{DummyData.comments}</Text>
           </Pressable>
           <Pressable
             onPress={() => {
@@ -49,7 +51,7 @@ const Post = () => {
             }}
             style={styles.button}>
             <FontAwesomeIcon icon={faRetweet} color="grey" />
-            <Text style={styles.number}>{countRetweet}</Text>
+            <Text style={styles.number}>{DummyData.retweets}</Text>
           </Pressable>
           <Pressable
             onPress={() => {
@@ -57,7 +59,7 @@ const Post = () => {
             }}
             style={styles.button}>
             <FontAwesomeIcon icon={faHeart} color="grey" />
-            <Text style={styles.number}>{countLike}</Text>
+            <Text style={styles.number}>{DummyData.likes}</Text>
           </Pressable>
           <Pressable style={styles.button}>
             <FontAwesomeIcon icon={faArrowUpFromBracket} color="grey" />
